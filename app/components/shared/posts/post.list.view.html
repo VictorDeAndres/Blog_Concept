@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <h1><span class="menu__title">Blog</span></h1>
+            <h6><span class="menu__subtitle">Victor de Andres</span></h6>
+        </div>
+        <div class="col-12 col-md-9 menu__input">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Busca por titulo o fecha" ng-model="searchPost">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button" ng-click="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">       
+        <div class="col-md-3"></div> 
+        <div class="col-12 col-md-9">
+            <div ng-repeat="post in viewPost track by $index">
+                <posts-list id= {{post.index}} title= {{post.title}} publishedat="{{post.posted | date : 'dd/MM/y'}}", text="{{post.text.substr(0, 75)}}", publisheby="{{post.author}}"></posts-list>
+            </div>
+        </div>
+    </div>
+    <div class="row posts__footer">
+        <div class="col-6" >
+            <span ng-show="pageNo!==0" ng-click="movebackward()">
+                <i class="fa fa-backward" aria-hidden="true"></i><span class="post__footer__text">Anterior</span>
+            </span>
+        </div>
+        <div class="col-6 text-right" >
+            <span ng-show="postsLength > topLimit" ng-click="moveforward()">
+                <span class="post__footer__text">Siguiente</span><i class="fa fa-forward" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+</div>

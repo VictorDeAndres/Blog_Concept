@@ -1,0 +1,45 @@
+.menu__title {
+    font-family: Roboto;
+    background-color: #000;
+    color: white;
+    @include respond-to(movil) { 
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 1em 0.5em 0.3em 0.5em;    
+    }
+    @include respond-to(tablet) { 
+        display: inline-block;
+        margin-top: 1em;
+        padding: 1em 1em 0.3em 1em;
+    }
+
+}
+
+.menu__subtitle {
+    background-color: #fff;
+    color: black;
+    margin-top: -.5em;
+    @include respond-to(movil) { 
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0.5em 0 1em 0;
+    }
+    @include respond-to(tablet) { 
+        display: inline-block;
+        padding: 1em 1em 0.5em 0.9em;
+    }
+
+}
+
+.menu__input {
+    color: white;
+    padding: 1em 0.3em 0.3em 0.3em;
+    display: inline-block;
+    @include respond-to(tablet) { 
+        padding: 1em 0.3em 0.3em 0.3em;
+        display: inline-block;
+        margin-top: 3em; 
+    }
+}

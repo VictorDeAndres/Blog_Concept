@@ -1,0 +1,48 @@
+.posts__resume__header
+{
+    display: block;
+    width: 100%;
+    height: .8em;
+    background-color: #cecece;
+    margin: 2em 1em .5em 0;
+}
+
+.posts__resume__title{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.posts__resume__title__publishedate,
+.posts__resume__title__publisheby
+{
+    color: #cecece;
+    font-size: 70%;
+}
+
+.posts__resume__publishedate,
+.posts__resume__publisheby
+{
+    font-size: 70%;
+}
+
+.posts__resume__text
+{
+    padding-top: 1em;
+}
+
+.posts__resume__link
+{
+    font-size: 60%;
+    text-decoration: underline;
+    color: #7d7c7c;
+}
+
+.posts__footer {
+    margin: 2em 0 2em 0;
+    font-size: 80%;
+    color: #7d7c7c;
+}
+
+.post__footer__text {
+    padding: 0 0.5em 0 0.5em;
+}

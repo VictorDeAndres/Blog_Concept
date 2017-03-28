@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html ng-app="TecnicaTM" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tecnica MobileTalent</title>
+
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- endbower -->
+
+        <!-- build:css css/app.css -->
+        <!-- inject:app:css -->
+        <link rel="stylesheet" href="/css/customstyle.css">
+        <!-- endinject -->
+        <!-- endbuild -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- bower:js -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/tether/dist/js/tether.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/moment/moment.js"></script>
+        <!-- endbower -->
+
+
+    </head>
+    <body>
+
+        <!-- Wrapper -->
+        <div class="container-fluid ng-cloak">
+            <div ng-view></div>
+        </div>
+        <!-- eof wrapper -->
+
+        <!-- Footer -->
+        <!-- eof Footer -->
+
+        <!-- build:js js/app.js -->
+        <!-- inject:app:js -->
+        <script src="/js/app.Constant.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/app.routes.js"></script>
+        <script src="/components/init/init.controller.js"></script>
+        <script src="/components/post/post.comments.directive.js"></script>
+        <script src="/components/post/post.controller.js"></script>
+        <script src="/components/post/post.factory.js"></script>
+        <script src="/components/post/post.service.js"></script>
+        <script src="/components/post.list/post.list.controller.js"></script>
+        <script src="/components/post.list/post.list.factory.js"></script>
+        <script src="/components/post.search.list/post.search.list.controller.js"></script>
+        <script src="/components/shared/posts/post.list.directive.js"></script>
+        <!-- endinject -->
+        <!-- endbuild -->
+
+    </body>
+</html>

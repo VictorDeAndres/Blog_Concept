@@ -1,0 +1,40 @@
+{
+  "name": "Tecnica_TM",
+  "description": "Tecnica_TM",
+  "main": "index.js",
+  "authors": [
+    "Victor de Andres"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "copark",
+    "godesk"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "jquery": "^3.0.0",
+    "angular-route": "^1.5.7",
+    "angular-mocks": "^1.5.7",
+    "angular-messages": "^1.5.7",
+    "bootstrap": "4.0",
+    "font-awesome": "fontawesome#~4.7.0",
+    "moment": "~2.18.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    }
+  },
+  "devDependencies": {}
+}

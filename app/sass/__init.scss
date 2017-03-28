@@ -1,0 +1,21 @@
+.init__title__container {
+    height: 100vh;    
+    text-align: center;  
+}
+
+.init__title__container:before {     
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 80vh;
+}
+
+.init__title__text {
+	color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.init__title__image {
+	content:url("../images/loading.gif");
+}
